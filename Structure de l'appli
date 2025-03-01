@@ -1,15 +1,19 @@
 # structure de l' application de gestion de bouteilles de gaz 
 
 gaz-livraison-backend/
-├── src/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── utils/
-│   ├── app.js
-│   └── server.js
-├── .env
-├── Dockerfile
-├── docker-compose.yml
-├── package.json
-└── README.md
+|-- src /
+|    |-- conducteur /
+|    |-- admin /
+|    |-- utilisateur /
+|    |-- bouteille /
+|    |-- contrôleur /
+|    |-- livraison /
+|    |-- routes /
+|    |-- utils/
+|    |-- app.js
+|    |-- server.js
+|-- .env
+|-- Dockerfile
+|-- docker-compose.yml
+|-- package.json
+|-- README.md
