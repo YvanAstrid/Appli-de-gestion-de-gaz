@@ -1,0 +1,52 @@
+### Diagramme UML pour l'application de gestion de gaz
+
+#### 1. Diagramme de Cas d’Utilisation
+Ce diagramme montre les interactions entre les acteurs et les fonctionnalités principales du système.
+
+**Acteurs :**
+- Chauffeur
+- Contrôleur
+- Direction
+
+**Cas d'utilisation principaux :**
+- Enregistrement des bouteilles pleines et vides (Contrôleur)
+- Suivi des flux de livraison (Contrôleur, Direction)
+- Calcul des salaires des chauffeurs (Direction)
+- Suivi des performances des contrôleurs (Direction)
+- Gestion des stocks globaux (Direction)
+
+#### 2. Diagramme de Classes
+
+**Classes principales :**
+- **Chauffeur** (id_chauffeur, nom, camions[], performances[])
+- **Camion** (id_camion, plaque, capacité, chauffeur)
+- **Contrôleur** (id_contrôleur, nom, enregistrements[])
+- **Bouteille** (id_bouteille, état [pleine/vide], date_scan, camion)
+- **Livraison** (id_livraison, date, camion, chauffeur, contrôleur, bouteilles[])
+- **Performance** (id_performance, chauffeur, nombre_bouteilles_vendues, salaire)
+
+#### 3. Diagramme de Séquence
+
+**Exemple de scénario : Enregistrement des bouteilles par un contrôleur**
+1. Le contrôleur ouvre l'application mobile.
+2. Il scanne ou enregistre les bouteilles (pleines et vides) avant départ.
+3. Il assigne un chauffeur et un camion.
+4. Après la livraison, il enregistre les bouteilles retournées.
+5. Le système calcule le nombre de bouteilles vendues.
+6. Les données sont synchronisées avec l’application web.
+7. La direction consulte les flux et les performances.
+
+#### 4. Diagramme d’Activité
+
+**Processus de gestion des livraisons**
+1. Le contrôleur identifie un camion et un chauffeur.
+2. Il enregistre les bouteilles chargées.
+3. Le chauffeur effectue la livraison.
+4. À son retour, le contrôleur enregistre les bouteilles restantes.
+5. Le système compare les données et détecte les incohérences.
+6. Calcul automatique des ventes et des performances.
+7. La direction valide les résultats et ajuste les salaires.
+
+---
+
+Je vais maintenant générer des diagrammes visuels pour ces descriptions.
