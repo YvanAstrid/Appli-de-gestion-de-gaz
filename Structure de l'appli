@@ -1,0 +1,15 @@
+# structure de l' application de gestion de bouteilles de gaz 
+
+gaz-livraison-backend/
+├── src/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── app.js
+│   └── server.js
+├── .env
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+└── README.md
